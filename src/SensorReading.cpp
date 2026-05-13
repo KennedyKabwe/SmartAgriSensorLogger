@@ -7,7 +7,7 @@ SensorReading::SensorReading(double V, std::chrono::system_clock::time_point t)
     : value(V), timestamp(t) {}
 
 //Getter for value
-double SensorReading::getvalue() const {
+double SensorReading::getValue() const {
     return value;
 }
 
