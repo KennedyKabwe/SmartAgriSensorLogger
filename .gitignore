@@ -29,3 +29,6 @@ Makefile
 *.swp
 #workspacefiles
 agric_sensor.code-workspace
+#data files
+data/
+sensorLog.csv
