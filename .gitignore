@@ -30,5 +30,5 @@ Makefile
 #workspacefiles
 agric_sensor.code-workspace
 #data files
-data/
-sensorLog.csv
+data/*.csv
+!data/.gitkeep
