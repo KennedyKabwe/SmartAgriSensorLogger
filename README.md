@@ -67,14 +67,13 @@ Optional (for future extensions):
 ---
 
 ## Project Structure
-AGRIC_SENSOR/
-├── include/           # Header files (SensorReading.h, SensorLog.h)
-├── src/               # Source files (SensorReading.cpp, SensorLog.cpp)
-├── data/              # Generated CSV logs (ignored by Git)
-├── build/             # Build output (CMake-generated)
-├── CMakeLists.txt     # Build configuration
-├── README.md          # Project documentations
-└── main.cpp           # Test driver
+- include/ → Header files (SensorReading.h, SensorLog.h)
+- src/ → Source files (SensorReading.cpp, SensorLog.cpp)
+- data/ → Generated CSV logs (ignored by Git)
+- build/ → Build output (CMake-generated)
+- CMakeLists.txt → Build configuration
+- README.md → Documentation
+- main.cpp → Test driver
 
 ---
 
