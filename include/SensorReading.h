@@ -14,7 +14,7 @@ public:
     //constructor initializes with value + timestamp
     SensorReading(double V, std::chrono::system_clock::time_point t);
     //Getter for value
-    double getvalue() const;
+    double getValue() const; //chagched getvalue to getValue for consistency
     //Getter for timestamp(raw form)
     std::chrono::system_clock::time_point getTimestamp() const;
     //Helper: converts timestamp to human-readable format
