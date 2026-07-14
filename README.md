@@ -25,16 +25,55 @@ Data can be exported to CSV files for further processing or integration with IoT
 
 ---
 
+## Program Demo
+
+The following examples demonstrate the SmartAgriSensorLogger application in action.
+
+### Console Output
+
+```text
+=== SmartAgriSensorLogger ===
+
+REAL TIME CAPTURE AND DEFAULT TEST VALUE
+
+Value: 42.5| Time: 2026-07-14 12:57:57
+
+BASIC ANALYSIS OF SENSOR LOG DATA
+
+Average: 25.65
+Min: 23.5
+Max: 27.8
+
+- NOTE: Values that are captured in CSV are not displayed in console they directly
+        written to sensor_log.csv
+```
+
+<p align="center">
+  <img src="docs/images/terminal_output.png" width="700" alt="Terminal Output">
+</p>
+
+---
+
+### Generated CSV File
+
+The application exports sensor readings into a CSV file that can be opened in Microsoft Excel, LibreOffice Calc, or other spreadsheet software.
+
+<p align="center">
+  <img src="docs/images/csv_output.png" width="850" alt="CSV Output">
+</p>
+
+---
+
 ## Roadmap
 - [x] Initialize Git repository and `main` branch  
 - [x] Create `dev` branch for integration  
 - [x] Create `feature/sensorlog` branch for isolated development  
 - [x] Implement `SensorReading` class (value + timestamp, getters, operator<<)  
 - [x] Update `CMakeLists.txt` to include new modules  
-- [ ] Implement `SensorLog` class (vector of readings, analysis methods)  
-- [ ] Extend `main.cpp` to test `SensorLog` (average, min, max, CSV export)  
-- [ ] Create `data/` folder and configure `.gitignore` for generated CSV files  
-- [ ] Document usage examples in README  
+- [x] Implement `SensorLog` class (vector of readings, analysis methods)  
+- [x] Extend `main.cpp` to test `SensorLog` (average, min, max, CSV export)  
+- [x] Create `data/` folder and configure `.gitignore` for generated CSV files  
+- [x] Document usage examples in README  
 - [ ] Add automated tests (Catch2 or GoogleTest)  
 - [ ] Extend system with multiple sensor types (temperature, humidity, soil moisture)  
 - [ ] Integrate with microcontrollers for real sensor input  
