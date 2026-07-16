@@ -31,32 +31,22 @@ The following examples demonstrate the SmartAgriSensorLogger application in acti
 
 ### Console Output
 
-```text
-=== SmartAgriSensorLogger ===
 
-REAL TIME CAPTURE AND DEFAULT TEST VALUE
+ - Sensor values that are captured in program are not displayed in console they are directly
+ written to sensor_log.csv
 
-Value: 42.5| Time: 2026-07-14 12:57:57
+The image below illustrate test values only, not what is sent to CSV,and all calculations are 
+done from sensor readings in CSV(not in console).
 
-BASIC ANALYSIS OF SENSOR LOG DATA
-
-Average: 25.65
-Min: 23.5
-Max: 27.8
-
-- NOTE: Values that are captured in CSV are not displayed in console they directly
-        written to sensor_log.csv
-```
 
 <p align="center">
-  <img src="docs/images/terminal_output.png" width="700" alt="Terminal Output">
+  <img src="docs/images/terminal_output.png" width="750" alt="Terminal Output">
 </p>
 
----
 
 ### Generated CSV File
 
-The application exports sensor readings into a CSV file that can be opened in Microsoft Excel, LibreOffice Calc, or other spreadsheet software.
+- The application exports sensor readings into a CSV file that can be opened in Microsoft Excel, LibreOffice Calc, or other spreadsheet software.
 
 <p align="center">
   <img src="docs/images/csv_output.png" width="850" alt="CSV Output">
